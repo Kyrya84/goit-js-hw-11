@@ -4,42 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Homework 11</title>
-
-    <script type="module" src="./index.js"></script>
+    <title>Homework 10</title>
   </head>
   <body>
-    <div class="search-container">
+    <header>
       <form class="search-form" id="search-form">
         <input
           type="text"
           name="searchQuery"
           autocomplete="off"
-          placeholder="Шукати зображення..."
+          placeholder="Шукати зораження..."
         />
-        <button type="submit">
-          <span class="material-icons">search</span>
-        </button>
+        <button type="submit" class="search-btn"></button>
       </form>
-    </div>
-    <div class="gallery-container">
-      <div class="gallery"></div>
-      <button type="button" class="btn-load-more is-hidden">Load more</button>
-      <a class="btn-to-top" title="Return to top">
-        <span class="material-icons">arrow_upward</span></a
-      >
-    </div>
+    </header>
 
-    <!-- <script src="index.js"></script> -->
+    <main>
+      <use href="./images/search.svg"></use>
+
+      <div class="gallery"></div>
+
+      <button type="button" class="load-more is-hidden">Load more</button>
+    </main>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
